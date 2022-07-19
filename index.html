@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buffer | Case Studies</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
+    <div id="navbarScrollFunction">
+        <div id="navbar">
+            <div><img src="img/logo.png" alt=""><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDgwMCI+DQo8cGF0aCBmaWxsPSIjM2E3NWM0IiBkPSJtMCwwaDEyMDB2ODAwaC0xMjAweiIvPg0KPHBhdGggZmlsbD0iI2Y5ZGQxNiIgZD0ibTAsNDAwaDEyMDB2NDAwaC0xMjAweiIvPg0KPC9zdmc+DQo=" alt=""></div>
+            <div>
+                <a href="">Tools</a>
+                <a href="">Pricing</a>
+                <a href="">Blog</a>
+                <a href="">About</a>
+                <a href="">Customers</a>
+            </div>
+            <div>
+                <a href="">Log In</a>
+                <a href="">Get started now</a>
+            </div>
+        </div>
+    </div>
+    
     
 </body>
+
 </html>
+<script>
+    let privScrollpos = window.pageYOffset;
+    window.onscroll = function(){
+        let currentScrollpos = window.pageYOffset;
+        if(currentScrollpos > privScrollpos){
+            document.getElementById("navbarScrollFunction").style.top="0px";
+        }else{
+            document.getElementById("navbarScrollFunction").style.top="-150px";
+        }
+        privScrollpos=currentScrollpos;
+    }
+</script>
