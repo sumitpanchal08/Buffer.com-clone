@@ -1,0 +1,26 @@
+.textcenter{
+    text-align: center;
+}
+.getstartnow{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 30px;
+    color: white;
+    background-color: rgb(44, 75, 255);
+    border-radius: 5px;
+    
+}
+.getstartnow:hover{
+    background-color: rgb(17, 45, 202);
+}
+.learnmore{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 30px;
+    color: rgb(44, 75, 255);
+    border: 2px solid rgb(44, 75, 255);
+    border-radius: 5px;
+}
+.learnmore:hover{
+    background-color:rgb(190, 234, 255) ;
+}
