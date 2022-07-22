@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started Now</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div><img src="img/logo.png" alt=""></div>
+    <div>
+        <h1>Let's get your account set up</h1>
+        <form action="">
+            <label for="">Email</label>
+            <input type="text" id="email">
+            <label for="">Create a Password</label>
+            <input type="text" id="password">
+            <input type="submit" value="Sign up">
+            <div><p>I agreee to Buffer's Term of Service.</p>
+                <p><a href="">Already have an account?</a></p>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
+<script>
+    let arr= JSON.parse(localStorage.getItem("logindata")) || [];
+    let form=document.querySelector("form");
+    form.addEventListener("submit",function(){
+        event.preventDefault();
+        if(form.email.value=="" || form.password.value==""){
+            alert("Fill All Details");
+        }else{
+            let obj={
+                email:form.email.value,
+                password:form.password.value
+            };
+            arr.push(obj);
+            localStorage.setItem("logindata",JSON.stringify(arr));
+            alert("Signup Successfull!! You will redirected to Login Page");
+            // window.location.url="login.html";
+        }
+    })
+</script>
