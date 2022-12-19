@@ -12,6 +12,7 @@
   </ol>
 </details>
 <a name="about-the-project"></a>
+
 ![App Screenshot](https://github.com/sumitpanchal08/Buffer.com-clone/blob/main/buffer.png)
 
 # Clone of Buffer.com which is a Social media Handling website
